@@ -6,12 +6,17 @@ export function CTASection() {
       {/* Decorative elements */}
       <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2">
         <svg className="w-8 h-8 md:w-12 md:h-12 opacity-30" viewBox="0 0 48 48" fill="none">
-          <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="2" />
         </svg>
       </div>
       <div className="absolute left-6 md:left-12 top-1/3">
         <svg className="w-10 h-10 md:w-16 md:h-16 opacity-30" viewBox="0 0 64 64" fill="none">
-          <path d="M32 8L48 32L32 56L16 32L32 8Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <path
+            d="M32 8L48 32L32 56L16 32L32 8Z"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+          />
         </svg>
       </div>
 
@@ -26,7 +31,7 @@ export function CTASection() {
             </div>
           </div>
           <div>
-            <a 
+            <a
               href="https://bestslotgames.top/rqNgNZ7R"
               rel="nofollow"
               target="_blank"

@@ -5,6 +5,7 @@ import {
   gamecheckLogo,
   responsibleGamingLogo as imgResponsible,
 } from '@/assets';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -15,46 +16,42 @@ export function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-12">
             {/* 18+ Badge */}
             <div className="h-12 md:h-16 flex items-center">
-              <img 
-                src={img18Plus} 
-                alt="18+" 
-                className="h-full w-auto"
-              />
+              <Image src={img18Plus} alt="18+" className="h-full w-auto" sizes="120px" />
             </div>
-            
+
             {/* GameCheck Logo */}
             <div className="h-12 md:h-16 flex items-center">
-              <img 
-                src={gamecheckLogo} 
-                alt="GameCheck" 
-                className="h-full w-auto"
-              />
+              <Image src={gamecheckLogo} alt="GameCheck" className="h-full w-auto" sizes="160px" />
             </div>
-            
+
             {/* GamStop Logo */}
             <div className="h-12 md:h-16 flex items-center">
-              <img 
-                src={imgGamStop} 
-                alt="GamStop" 
+              <Image
+                src={imgGamStop}
+                alt="GamStop"
                 className="h-full w-auto"
+                sizes="120px"
+                quality={100}
               />
             </div>
-            
+
             {/* BeGambleAware Logo */}
             <div className="h-12 md:h-16 flex items-center">
-              <img 
-                src={imgBeGambleAware} 
-                alt="BeGambleAware" 
+              <Image
+                src={imgBeGambleAware}
+                alt="BeGambleAware"
                 className="h-full w-auto"
+                sizes="160px"
               />
             </div>
-            
+
             {/* Additional Organization Logo */}
             <div className="h-12 md:h-16 flex items-center">
-              <img 
-                src={imgResponsible} 
-                alt="Responsible Gaming" 
+              <Image
+                src={imgResponsible}
+                alt="Responsible Gaming"
                 className="h-full w-auto"
+                sizes="160px"
               />
             </div>
           </div>
@@ -65,10 +62,12 @@ export function Footer() {
       <div className="border-b border-gray-700">
         <div className="container mx-auto px-4 md:px-6 py-4 md:py-6">
           <p className="text-center text-xs md:text-sm text-gray-300 leading-relaxed">
-            Playtech Plc is licensed and regulated in Great Britain by the Gambling Commission under account number 38818.
+            Playtech Plc is licensed and regulated in Great Britain by the Gambling Commission under
+            account number 38818.
           </p>
           <p className="text-center text-xs md:text-sm text-gray-300 mt-2 leading-relaxed">
-            Playtech PLC holds a critical gaming supply corporate license number MGA/CRP/137/2007, issued on 06 December 2018 by the Malta Gaming Authority
+            Playtech PLC holds a critical gaming supply corporate license number MGA/CRP/137/2007,
+            issued on 06 December 2018 by the Malta Gaming Authority
           </p>
         </div>
       </div>

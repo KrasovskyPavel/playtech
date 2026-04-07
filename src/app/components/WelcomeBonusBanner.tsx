@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'motion/react';
 import { Play, Gift, TrendingUp } from 'lucide-react';
 
@@ -6,10 +8,13 @@ export function WelcomeBonusBanner() {
     <section className="py-12 sm:py-14 md:py-16 bg-gradient-to-r from-[#3D5A80] via-[#5B7FA8] to-[#6B8CAE] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '30px 30px'
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+            backgroundSize: '30px 30px',
+          }}
+        ></div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

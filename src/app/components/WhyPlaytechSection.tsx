@@ -4,19 +4,19 @@ export function WhyPlaytechSection() {
   const features = [
     {
       icon: Trophy,
-      title: "Massive Progressive Jackpots",
-      description: "Win life-changing prizes with jackpots reaching millions in top slots"
+      title: 'Massive Progressive Jackpots',
+      description: 'Win life-changing prizes with jackpots reaching millions in top slots',
     },
     {
       icon: Globe,
-      title: "600+ Premium Slots",
-      description: "From classic fruit machines to blockbuster movie-themed adventures"
+      title: '600+ Premium Slots',
+      description: 'From classic fruit machines to blockbuster movie-themed adventures',
     },
     {
       icon: Settings,
-      title: "Big Bonuses & Free Spins",
-      description: "Unlock massive multipliers, wild features and bonus rounds for huge wins"
-    }
+      title: 'Big Bonuses & Free Spins',
+      description: 'Unlock massive multipliers, wild features and bonus rounds for huge wins',
+    },
   ];
 
   return (
@@ -24,7 +24,7 @@ export function WhyPlaytechSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-8 md:mb-12">
           <p className="text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4 text-gray-400">
-            WHY PLAYTECH 
+            WHY PLAYTECH
           </p>
           <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl">
             A client-first approach:
@@ -42,9 +42,7 @@ export function WhyPlaytechSection() {
                   </div>
                 </div>
                 <div className="border-l-2 border-white pl-3 md:pl-4">
-                  <div className="text-lg md:text-xl font-semibold mb-2">
-                    {feature.title}
-                  </div>
+                  <div className="text-lg md:text-xl font-semibold mb-2">{feature.title}</div>
                   <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                     {feature.description}
                   </p>

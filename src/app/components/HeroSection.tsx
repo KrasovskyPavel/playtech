@@ -1,41 +1,47 @@
+'use client';
+
 import { motion } from 'motion/react';
 import { Play, Trophy, Star, Zap, DollarSign, Sparkles } from 'lucide-react';
 import { heroImage } from '@/assets';
+import Image from 'next/image';
 
 export function HeroSection() {
   return (
     <section className="relative bg-gradient-to-br from-[#0a0a0f] via-[#1c1832] to-[#2B2D42] text-white overflow-hidden min-h-screen flex items-center">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '40px 40px'
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+            backgroundSize: '40px 40px',
+          }}
+        ></div>
       </div>
 
       {/* Animated Decorative Shapes */}
-      <motion.div 
+      <motion.div
         className="absolute top-20 right-10 w-48 md:w-72 h-48 md:h-72 bg-[#5B7FA8] rounded-full blur-3xl opacity-20"
         animate={{
           scale: [1, 1.2, 1],
-          opacity: [0.2, 0.3, 0.2]
+          opacity: [0.2, 0.3, 0.2],
         }}
         transition={{
           duration: 4,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: 'easeInOut',
         }}
       ></motion.div>
-      <motion.div 
+      <motion.div
         className="absolute bottom-10 left-10 w-64 md:w-96 h-64 md:h-96 bg-[#3D5A80] rounded-full blur-3xl opacity-20"
         animate={{
           scale: [1, 1.1, 1],
-          opacity: [0.2, 0.25, 0.2]
+          opacity: [0.2, 0.25, 0.2],
         }}
         transition={{
           duration: 5,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: 'easeInOut',
         }}
       ></motion.div>
 
@@ -48,14 +54,12 @@ export function HeroSection() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-
             <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-3 md:mb-4 leading-tight">
               WIN BIG AT
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#5B7FA8] via-[#87CEEB] to-[#5B7FA8] animate-pulse">
                 PLAYTECH
               </span>
             </div>
-
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-4 md:mb-6 justify-center lg:justify-start">
@@ -90,8 +94,8 @@ export function HeroSection() {
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <motion.div 
-                      key={i} 
+                    <motion.div
+                      key={i}
                       className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-[#5B7FA8] to-[#87CEEB] border-2 border-[#2B2D42] flex items-center justify-center text-white font-bold text-xs"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -141,19 +145,21 @@ export function HeroSection() {
                 className="relative block cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                animate={{ 
+                animate={{
                   y: [0, -10, 0],
                 }}
                 style={{
-                  transition: 'transform 3s ease-in-out infinite'
+                  transition: 'transform 3s ease-in-out infinite',
                 }}
               >
-                <img
+                <Image
                   src={heroImage}
                   alt="Age of the Gods - Premium Casino Slot"
                   className="w-full max-w-sm md:max-w-md lg:max-w-lg drop-shadow-2xl mx-auto"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  priority
                 />
-                
+
                 {/* Glow Effect Behind Image */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#5B7FA8] via-[#87CEEB] to-[#5B7FA8] rounded-full blur-3xl opacity-30 scale-110 -z-10"></div>
               </motion.a>
@@ -180,16 +186,16 @@ export function HeroSection() {
               </motion.div>
 
               {/* Pulse Effect */}
-              <motion.div 
+              <motion.div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-96 md:h-96 bg-[#87CEEB] rounded-full blur-3xl opacity-20 -z-20"
                 animate={{
                   scale: [1, 1.3, 1],
-                  opacity: [0.15, 0.3, 0.15]
+                  opacity: [0.15, 0.3, 0.15],
                 }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: 'easeInOut',
                 }}
               ></motion.div>
             </div>

@@ -21,7 +21,6 @@ Slots, pokies, table games, live dealer games
 Security
 SSL encryption and responsible gaming tools
 
-
 Playtech Casinos in New Zealand
 Playtech casinos nz offer an impressive variety of games while maintaining fair play and reliable platforms. These sites prioritize player security, fast payouts, and an engaging user experience. New Zealand players can enjoy playtech casino list platforms with:
 High-quality playtech slots
@@ -44,7 +43,6 @@ Live Dealer
 Realistic casino experience
 Loyalty Rewards
 VIP perks, cashback, and bonuses
-
 
 Playtech Games
 Popular Playtech Slots and Pokies

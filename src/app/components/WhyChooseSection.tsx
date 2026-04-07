@@ -8,7 +8,7 @@ export function WhyChooseSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left - Laptop Image */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -23,7 +23,7 @@ export function WhyChooseSection() {
           </motion.div>
 
           {/* Right - Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -33,7 +33,7 @@ export function WhyChooseSection() {
             <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-8 text-[#1c1832] leading-tight">
               WHY CHOOSE US?
             </div>
-            
+
             {/* Key Benefits - Only 3 items */}
             <div className="space-y-6 mb-10">
               <div className="flex items-start gap-4">
@@ -41,9 +41,12 @@ export function WhyChooseSection() {
                   <Trophy className="w-6 h-6 text-[#5B7FA8]" />
                 </div>
                 <div>
-                  <div className="font-bold text-xl text-[#1c1832] mb-2">Massive Jackpots & Big Wins</div>
+                  <div className="font-bold text-xl text-[#1c1832] mb-2">
+                    Massive Jackpots & Big Wins
+                  </div>
                   <p className="text-gray-600 leading-relaxed">
-                    Experience the largest progressive jackpots in the industry with life-changing prizes
+                    Experience the largest progressive jackpots in the industry with life-changing
+                    prizes
                   </p>
                 </div>
               </div>
@@ -53,7 +56,9 @@ export function WhyChooseSection() {
                   <Sparkles className="w-6 h-6 text-[#5B7FA8]" />
                 </div>
                 <div>
-                  <div className="font-bold text-xl text-[#1c1832] mb-2">Premium Game Selection</div>
+                  <div className="font-bold text-xl text-[#1c1832] mb-2">
+                    Premium Game Selection
+                  </div>
                   <p className="text-gray-600 leading-relaxed">
                     600+ exclusive branded slots featuring blockbuster movies and TV shows
                   </p>
@@ -65,7 +70,9 @@ export function WhyChooseSection() {
                   <Zap className="w-6 h-6 text-[#5B7FA8]" />
                 </div>
                 <div>
-                  <div className="font-bold text-xl text-[#1c1832] mb-2">Trusted & Secure Platform</div>
+                  <div className="font-bold text-xl text-[#1c1832] mb-2">
+                    Trusted & Secure Platform
+                  </div>
                   <p className="text-gray-600 leading-relaxed">
                     Industry-leading security with certified fair play and reliable payouts
                   </p>
@@ -79,15 +86,14 @@ export function WhyChooseSection() {
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-[#87CEEB]" />
                 </div>
-                <div className="text-xl font-black text-white">
-                  BLOCKBUSTER BRAND SLOTS
-                </div>
+                <div className="text-xl font-black text-white">BLOCKBUSTER BRAND SLOTS</div>
               </div>
               <p className="text-gray-200 leading-relaxed text-sm">
-                Play exclusive slots from <span className="font-bold text-white">The Walking Dead™</span>, 
-                <span className="font-bold text-white"> Gladiator™</span>, 
-                <span className="font-bold text-white"> Rocky™</span>, and many more! 
-                Licensed partnerships with AMC, Paramount, MGM and Warner Bros.
+                Play exclusive slots from{' '}
+                <span className="font-bold text-white">The Walking Dead™</span>,
+                <span className="font-bold text-white"> Gladiator™</span>,
+                <span className="font-bold text-white"> Rocky™</span>, and many more! Licensed
+                partnerships with AMC, Paramount, MGM and Warner Bros.
               </p>
             </div>
           </motion.div>
